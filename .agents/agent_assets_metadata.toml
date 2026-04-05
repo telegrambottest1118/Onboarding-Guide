@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "5LL_7ulfwJD8Gn_vKt7Fe"
+uri = "file://artifacts/onboarding-demo/public/images/bg_tech.png"
+type = "image"
+title = "Dark cinematic tech background"
+
+[[generated]]
+id = "N493FkfU312UukE8kVlil"
+uri = "file://artifacts/onboarding-demo/public/images/tg_logo.png"
+type = "image"
+title = "TG geometric logo"
+
+[[generated]]
+id = "t0x2JcePTrh3WTw5Cthav"
+uri = "file://artifacts/onboarding-demo/public/images/ui_fragment.png"
+type = "image"
+title = "Abstract UI fragment"

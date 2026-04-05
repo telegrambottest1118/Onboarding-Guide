@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #A855F7;
-  --color-secondary: #3B82F6;
-  --color-accent: #10B981;
+  --color-primary: #7c3aed; /* Sharp violet-blue */
+  --color-secondary: #c084fc;
+  --color-accent: #f59e0b; /* Amber-gold */
 
-  --color-bg-light: #FFFFFF;
-  --color-bg-dark: #0B0F19;
-  --color-bg-muted: #1E293B;
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #090909; /* Deep near-black */
+  --color-bg-muted: #111111;
 
-  --color-text-primary: #F8FAFC;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
-  --color-text-inverse: #0B0F19;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #52525b;
+  --color-text-inverse: #090909;
 
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 
   --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -46,11 +46,18 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  overflow: hidden;
 }
 
 /* Custom utility classes */
 .font-display {
   font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
 }
 
 .perspective-1000 {
@@ -59,4 +66,41 @@ body {
 
 .transform-style-3d {
   transform-style: preserve-3d;
+}
+
+.clip-path-circle {
+  clip-path: circle(0% at 50% 50%);
+}
+
+.clip-path-circle-full {
+  clip-path: circle(150% at 50% 50%);
+}
+
+.clip-path-polygon-0 {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.clip-path-polygon-100 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.4) 100%);
+}
+
+.glass-panel {
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-accent {
+  background: rgba(124, 58, 237, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
 }
